@@ -1,0 +1,6 @@
+Here we are listing the steps involved in creating this project.
+
+1. Define 2 components (Home and Projects)
+2. Build the HTML of the Home Component. 
+    2.1 The HTML of the home Component will contain the feature of adding to-dos and revoking the to-dos
+3. Add the item counter.

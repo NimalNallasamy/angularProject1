@@ -1,0 +1,24 @@
+<div class="container color-dark">
+    <div class="col">
+       <p>Add Task List</p>
+    </div>
+    <div class="col">
+        <p>Task List ({{itemCounter}})</p>
+    </div>
+</div>
+
+<div class="container color-light" [@taskListArray]="taskListArray.length">
+    <div class="col">
+        <h2> Use this tool to add the task in the task list </h2>
+        <form>
+            <input type="text" class="inputText" name="taskName" placeholder="Enter your Task Name" [(ngModel)]="taskName"/>
+            <br>
+            <input type="submit" class="inputButton" value="Add Your Task" (click)= "addTask()"/>
+        </form>
+    </div>
+    <div class="col">
+        <p class="project-container" *ngFor="let items of taskListArray;let i=index" (click)="removeTask(i)">
+            {{items}}
+        </p>
+    </div>
+</div>
