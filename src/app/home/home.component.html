@@ -1,13 +1,13 @@
-<div class="container color-dark">
-    <div class="col">
+<div class="container1 color-dark1">
+    <div class="col1">
        <p>Add Task List</p>
     </div>
-    <div class="col">
+    <div class="col1">
         <p>Task List ({{itemCounter}})</p>
     </div>
 </div>
 
-<div class="container color-light" [@taskListArray]="taskListArray.length">
+<div class="container1 color-light1" [@taskListArray]="taskListArray.length">
     <div class="col">
         <h2> Use this tool to add the task in the task list </h2>
         <form>
@@ -17,7 +17,7 @@
         </form>
     </div>
     <div class="col">
-        <p class="project-container" *ngFor="let items of taskListArray;let i=index" (click)="removeTask(i)">
+        <p class="project-container1" *ngFor="let items of taskListArray;let i=index" (click)="removeTask(i)">
             {{items}}
         </p>
     </div>

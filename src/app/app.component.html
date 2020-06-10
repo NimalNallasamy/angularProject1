@@ -4,8 +4,9 @@
   </div>
   <div>
     <ul>
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
+      <li><a routerLink="" routerLinkActive="Active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+      <li><a routerLink="/projects" routerLinkActive="Active">Projects</a></li>
+      <li><a routerLink="/profile" routerLinkActive="Active" [queryParams]={id:1}>Profile</a></li>
     </ul>
     <!-- <app-home style="background-color:lightcyan; height: inherit; width: inherit;"></app-home> -->
   </div>

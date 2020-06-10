@@ -1,17 +1,17 @@
-.container{
+.container1{
     display: grid;
     grid-template-columns: 50% auto;
 }
 
-.col{
-    padding: 0.4em 1.3;
+.col1{
+    padding: 0.6em;
 }
 
-.color-dark{
+.color-dark1{
     background: #2885c4;
 }
 
-.color-light{
+.color-light1{
     background: #57b3f1;
 }
 
@@ -31,7 +31,7 @@ input.inputButton{
      
 }
 
-.project-container{
+.project-container1{
     background: #3fa0e1;
     padding: .5em;
     font-weight: bold;

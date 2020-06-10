@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  trackClick : boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeStar() : void {
+    this.trackClick = !this.trackClick;
   }
 
 }
